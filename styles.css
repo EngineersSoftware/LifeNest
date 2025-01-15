@@ -284,24 +284,100 @@ section {
 
 /* Contacto */
 .contacto {
-    background: var(--color-secondary);
+    background: linear-gradient(
+        135deg, 
+        rgba(142, 182, 155, 0.1), 
+        rgba(35, 83, 71, 0.1)
+    );
+    padding: 4rem 2rem;
 }
 
-#contact-form {
+.contacto-container {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 500px;
-    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+    align-items: center;
 }
 
-#contact-form input,
-#contact-form textarea {
+.contacto-info {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 15px 30px rgba(35, 83, 71, 0.1);
+}
+
+.contacto-subtitle {
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+}
+
+.contacto-detalles {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contacto-item i {
+    font-size: 2.5rem;
+    color: var(--color-accent);
+    background: rgba(142, 182, 155, 0.1);
     padding: 1rem;
-    background: rgba(35, 83, 71, 0.2);
-    border: none;
-    color: var(--color-text-light);
+    border-radius: 50%;
+}
+
+.contacto-formulario {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 15px 30px rgba(35, 83, 71, 0.1);
+}
+
+.form-grupo {
+    margin-bottom: 1.5rem;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(142, 182, 155, 0.3);
     border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.form-grupo textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contacto-formulario .btn-primary {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 
 /* Botones */

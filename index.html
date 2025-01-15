@@ -17,13 +17,17 @@
     <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    
     <!-- Estilos Principales -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Cursor Personalizado 
-    <div id="custom-cursor"></div> -->
-
+    <div id="custom-cursor"></div>
+    
     <!-- Barra de Navegación -->
     <header class="header">
         <nav class="navbar">
@@ -113,13 +117,68 @@
 
         <!-- Contacto -->
         <section id="contacto" class="contacto">
-            <h2 class="section-title">Contáctanos</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo Electrónico" required>
-                <textarea placeholder="Tu Mensaje" required></textarea>
-                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-            </form>
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    <h2 class="section-title">Contáctanos</h2>
+                    <p class="contacto-subtitle">¿Tienes alguna pregunta o sugerencia? Estamos aquí para ayudarte.</p>
+                    
+                    <div class="contacto-detalles">
+                        <div class="contacto-item">
+                            <i class="material-icons">email</i>
+                            <div>
+                                <h4>Correo Electrónico</h4>
+                                <p>soporte@lifenest.com</p>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="material-icons">phone</i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+52 (55) 1234 5678</p>
+                            </div>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="material-icons">location_on</i>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Av. Tecnológico 123, CDMX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contacto-formulario">
+                    <form id="contact-form">
+                        <div class="form-grupo">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="form-grupo">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu.correo@ejemplo.com" required>
+                        </div>
+                        
+                        <div class="form-grupo">
+                            <label for="asunto">Asunto</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="soporte">Soporte Técnico</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="colaboracion">Colaboración</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-grupo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
