@@ -1,4 +1,4 @@
-# LifeNest 🐾 Mascota Virtual
+# LifeNest 
 
 ## 🌟 Descripción del Proyecto
 
@@ -26,12 +26,6 @@ LifeNest es una aplicación web innovadora que combina productividad personal co
 
 ## 📦 Instalación
 
-1. Clonar el repositorio
-```bash
-git clone https://github.com/tu-usuario/lifenest.git
-```
-
-2. Abrir `index.html` en un navegador moderno
 
 ## 🛠️ Configuración del Entorno
 
