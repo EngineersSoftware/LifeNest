@@ -3,177 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LifeNest - Organiza, Crea y Conecta tu Mundo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>LifeNest - Tu Compañero Digital de Productividad</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Estilos Principales -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container header-content">
+    <!-- Cursor Personalizado 
+    <div id="custom-cursor"></div> -->
+
+    <!-- Barra de Navegación -->
+    <header class="header">
+        <nav class="navbar">
             <div class="logo">LifeNest</div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#caracteristicas">Características</a></li>
-                    <li><a href="#mascota">Mascota Virtual</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#mascota">Mascota Virtual</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Sección Hero -->
     <main>
-        <section class="hero" id="inicio">
-            <div class="container">
-                <h1>LifeNest: Organiza, Crea y Conecta tu Mundo </h1>
-                <p><span class="material-icons">auto_fix_high</span> Más que una app, LifeNest es tu espacio personal para organizar metas, trabajar inteligentemente y disfrutar del proceso. <span class="material-icons">rocket_launch</span></p>
-                <div class="hero-cta">
-                    <button id="download-btn" class="btn btn-primary">
-                        <span class="material-icons">smartphone</span> Obtener App
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="main-title animate__animated animate__fadeIn">LifeNest</h1>
+                <p class="hero-subtitle animate__animated animate__fadeInUp">Tu compañero digital para transformar productividad en aventura</p>
+                <div class="hero-cta animate__animated animate__fadeInUp">
+                    <button class="btn btn-primary">Comenzar</button>
+                    <button class="btn btn-secondary">Saber Más</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características Principales -->
+        <section id="caracteristicas" class="features">
+            <h2 class="section-title animate__animated animate__fadeIn">Funciones Principales</h2>
+            <div class="features-carousel">
+                <div class="features-wrapper">
+                    <div class="feature-slide">
+                        <div class="feature animate__animated animate__fadeInLeft">
+                            <i class="material-icons">sticky_note_2</i>
+                            <h3>Notas Inteligentes</h3>
+                            <p>Organiza tus ideas con IA. Escribe o dicta, nosotros clasificamos.</p>
+                        </div>
+                        <div class="feature animate__animated animate__fadeInUp">
+                            <i class="material-icons">calendar_month</i>
+                            <h3>Calendario Integrado</h3>
+                            <p>Gestiona tu tiempo con vistas personalizables.</p>
+                        </div>
+                        <div class="feature animate__animated animate__fadeInRight">
+                            <i class="material-icons">pets</i>
+                            <h3>Mascota Virtual</h3>
+                            <p>Tu compañero de productividad que crece contigo.</p>
+                        </div>
+                    </div>
+                    <div class="feature-slide">
+                        <div class="feature animate__animated animate__fadeInLeft">
+                            <i class="material-icons">directions_walk</i>
+                            <h3>Mapa de Pasos</h3>
+                            <p>Registra y comparte tus caminatas, desbloquea logros especiales.</p>
+                        </div>
+                        <div class="feature animate__animated animate__fadeInUp">
+                            <i class="material-icons">emoji_events</i>
+                            <h3>Sistema de Logros</h3>
+                            <p>Completa desafíos, gana puntos, personaliza tu experiencia.</p>
+                        </div>
+                        <div class="feature animate__animated animate__fadeInRight">
+                            <i class="material-icons">group</i>
+                            <h3>Red Social</h3>
+                            <p>Conecta, comparte y desafía a otros usuarios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mascota Virtual -->
+        <section id="mascota" class="mascota-virtual">
+            <div class="mascota-content">
+                <div class="mascota-texto">
+                    <h2 class="section-title">Tu Compañero Digital</h2>
+                    <p>Una mascota virtual que evoluciona con tus logros</p>
+                    <button id="crear-mascota-btn" class="btn btn-primary animate__animated animate__pulse">
+                        Crear Mascota
                     </button>
-                    <button id="demo-btn" class="btn btn-secondary">
-                        <span class="material-icons">play_circle</span> Explorar Demo
-                    </button>
                 </div>
+                <div class="mascota-preview"></div>
             </div>
         </section>
 
-        <section class="features" id="funciones">
-            <div class="container">
-                <h2 class="section-title"> Funciones Principales </h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <span class="material-icons" style="font-size: 3rem; color: var(--color-primary);">sticky_note_2</span>
-                        <h3><span class="material-icons"></span> Toma de Notas Inteligente</h3>
-                        <p> Escribe o dicta tus ideas. Nuestra IA organiza automáticamente tus notas por categorías. </p>
-                        <button class="btn btn-primary btn-small">Más Información</button>
-                    </div>
-                    <div class="feature-card">
-                        <span class="material-icons" style="font-size: 3rem; color: var(--color-secondary);">calendar_month</span>
-                        <h3><span class="material-icons"></span> Calendario Integrado</h3>
-                        <p> Gestiona eventos y tareas con vistas personalizables y sincronización perfecta. </p>
-                        <button class="btn btn-secondary btn-small">Explorar</button>
-                    </div>
-                    <div class="feature-card">
-                        <span class="material-icons" style="font-size: 3rem; color: var(--color-accent);">pets</span>
-                        <h3><span class="material-icons"></span> Mascota Virtual</h3>
-                        <p>Crea y desarrolla tu mascota virtual que crece con tus logros personales. </p>
-                        <button class="btn btn-primary btn-small">Crear Mascota</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mascota-virtual" id="mascota">
-            <div class="container">
-                <div class="mascota-virtual-info">
-                    <h2><span class="material-icons">pets</span> Tu Compañero de Aventuras</h2>
-                    <p>Cada logro desbloquea nuevas características para tu mascota virtual. Personalízala, entrénala y conviértela en tu mejor amigo digital.</p>
-                    <ul class="mascota-caracteristicas">
-                        <li><span class="material-icons">trending_up</span> Crece con tus logros</li>
-                        <li><span class="material-icons">palette</span> Personalización completa</li>
-                        <li><span class="material-icons">emoji_events</span> Desafíos y recompensas</li>
-                    </ul>
-                    <button id="crear-mascota" class="btn btn-primary">
-                        <span class="material-icons">add_circle</span> Crear Mi Mascota
-                    </button>
-                </div>
-                <div class="mascota-virtual-imagen floating-element">
-                    <!-- Placeholder para imagen -->
-                </div>
-            </div>
-        </section>
-        
-        <!-- Añadir después del contenedor principal -->
-        <div class="mascota-creada-container">
-            <div class="mascota-creada-card">
-                <div class="mascota-creada-header">
-                    <i class="material-icons">pets</i>
-                    <h2>¡Mascota Creada!</h2>
-                </div>
-                <div class="mascota-creada-detalles">
-                    <div class="detalle">
-                        <span class="detalle-label">Nombre</span>
-                        <span class="detalle-valor" id="mascota-nombre">-</span>
-                    </div>
-                    <div class="detalle">
-                        <span class="detalle-label">Tipo</span>
-                        <span class="detalle-valor" id="mascota-tipo">-</span>
-                    </div>
-                    <div class="detalle">
-                        <span class="detalle-label">Color</span>
-                        <span class="detalle-valor" id="mascota-color">-</span>
-                    </div>
-                </div>
-                <div class="mascota-creada-acciones">
-                    <button class="btn btn-primary" id="btn-continuar">Continuar</button>
-                    <button class="btn btn-secondary" id="btn-cerrar">Cerrar</button>
-                </div>
-            </div>
-        </div>
-
-        <section id="caracteristicas">
-            <h2>Características Destacadas</h2>
-            <div class="caracteristicas-lista">
-                <div class="caracteristica">
-                    <h3><span class="material-icons">map</span> Mapa y Seguimiento de Pasos</h3>
-                    <p>Registra tus caminatas y alcanza metas diarias para desbloquear logros especiales. Cada paso te acerca más a tus objetivos.</p>
-                </div>
-                <div class="caracteristica">
-                    <h3><span class="material-icons">emoji_events</span> Logros y Gamificación</h3>
-                    <p>Completa desafíos diarios, semanales y personalizados para ganar puntos. Transforma tu productividad en una aventura emocionante.</p>
-                </div>
-                <div class="caracteristica">
-                    <h3><span class="material-icons">psychology</span> IA Personalizada</h3>
-                    <p>Nuestra inteligencia artificial aprende de tus hábitos y te ofrece recomendaciones personalizadas.</p>
-                </div>
-            </div>
-        </section>
-
+        <!-- Contacto -->
         <section id="contacto" class="contacto">
-            <div class="container">
-                <h2 class="section-title">Contáctanos</h2>
-                <form id="contacto-form" class="contacto-form">
-                    <input type="text" name="nombre" placeholder="Nombre Completo" required>
-                    <input type="email" name="email" placeholder="Correo Electrónico" required>
-                    <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                    <button type="submit" class="btn btn-primary">
-                        <span class="material-icons">send</span> Enviar Mensaje
-                    </button>
-                </form>
-            </div>
+            <h2 class="section-title">Contáctanos</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Tu Mensaje" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>LifeNest</h3>
-                    <p>Organiza, Crea y Conecta</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#caracteristicas">Características</a>
-                    <a href="#mascota">Mascota Virtual</a>
-                    <a href="#contacto">Contacto</a>
-                </div>
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><span class="material-icons">facebook</span></a>
-                    <a href="#" class="social-icon"><span class="material-icons">twitter</span></a>
-                    <a href="#" class="social-icon"><span class="material-icons">instagram</span></a>
-                </div>
-            </div>
-            <p class="copyright">&copy; 2025 LifeNest. Todos los derechos reservados.</p>
-        </div>
+        <p>&copy; 2024 LifeNest. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- SweetAlert2 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Librerías y Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     
-    <!-- Scripts al final del body para asegurar carga completa -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <!-- Script Principal -->
     <script src="script.js"></script>
 </body>
 </html>
