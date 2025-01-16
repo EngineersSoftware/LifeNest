@@ -24,7 +24,6 @@ LifeNest es una aplicación web innovadora que combina productividad personal co
 - JavaScript (ES6+)
 - SweetAlert2 para modales interactivos
 
-## 📦 Instalación
 
 
 ## 🛠️ Configuración del Entorno
